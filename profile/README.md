@@ -24,7 +24,7 @@ Each counter streams video to a GPU server, which tracks people crossing the doo
 |---|---|---|
 | [crowdcount-counter](https://github.com/Crowd-Count/crowdcount-counter) | Firmware for the doorway counter. Streams video, sets itself up over Bluetooth from a QR code, and joins the fleet network | Python, Raspberry Pi OS, libcamera, Tailscale |
 | [crowdcount-counter-server](https://github.com/Crowd-Count/crowdcount-counter-server) | Takes every counter's stream and counts doorway crossings with our own trained YOLO models and ByteTrack | Python, Ultralytics YOLO, OpenCV, MediaMTX, Docker + CUDA |
-| [crowdcount-server](https://github.com/Crowd-Count/crowdcount-server) | The cloud API. Stores counts and manages locations, overcrowding alerts, reports, push notifications and Square POS sync | Python, Flask, Gunicorn, SQLite, Docker, AWS |
+| crowdcount-server *(private)* | The cloud API. Stores counts and manages locations, overcrowding alerts, reports, push notifications and Square POS sync | Python, Flask, Gunicorn, SQLite, Docker, AWS |
 | [crowdcount-ios](https://github.com/Crowd-Count/crowdcount-ios) | The iOS app ([App Store](https://apps.apple.com/us/app/crowdcount-app/id6523433094)): live counts, history, insights, a map of venues and alerts | Swift, SwiftUI, MapKit, Stripe |
 | [crowdcount-web](https://github.com/Crowd-Count/crowdcount-web) | [crowdcount.tech](https://crowdcount.tech): the marketing site and a public map of live busyness and popular times | Next.js, React, MapKit JS |
 | [crowdcount-counter-manager](https://github.com/Crowd-Count/crowdcount-counter-manager) | Web app where owners group counters into locations and view history and insights | Next.js, TypeScript, Tailwind, Recharts |
@@ -49,4 +49,4 @@ Each counter streams video to a GPU server, which tracks people crossing the doo
 
 ---
 
-All repositories are archived and read-only. © 2025–2026 CrowdCount LLC. All rights reserved.
+The public repositories are archived and read-only; crowdcount-server is kept private. © 2025–2026 CrowdCount LLC. All rights reserved.
